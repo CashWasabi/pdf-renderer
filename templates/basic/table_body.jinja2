@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <th>Hero</th>
+    <th>Power</th>
+    <th>Nemesis</th>
+  </tr>
+  {% for hero in heroes %}
+    <tr>
+      <td>{{ hero.name }}</td>
+      <td>{{ hero.power }}</td>
+      <td>{{ hero.nemesis }}</td>
+    </tr>
+  {% endfor %}
+</table>

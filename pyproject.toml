@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "PDF Renderer"
+version = "1.0.0dev"
+description = "PDF Renderer"
+readme = "README.md"
+authors = ["Marcel Ochs"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pytz = "^2019.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^4.6"
+pytest-cov = "*"
+mypy = "^0.710.0"
+black = { version = "*", allows-prereleases = true }
+flake8 = "^3.7"
+flake8-comprehensions = "^2.1"
+flake8-import-order = "^0.18.1"
+WeasyPrint = "51"

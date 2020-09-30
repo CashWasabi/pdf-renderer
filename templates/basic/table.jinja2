@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+    <title>basicTable.html</title>
+    <meta charset = "UTF-8" />
+    <style type = "text/css">
+    table, td, th {
+      border: 1px solid black;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>A Basic Table</h1>
+    <h2>HTML Superheroes</h2>
+    <table>
+      <tr>
+        <th>Hero</th>
+        <th>Power</th>
+        <th>Nemesis</th>
+      </tr>
+      {% for hero in heroes %}
+        <tr>
+          <td>{{ hero.name }}</td>
+          <td>{{ hero.power }}</td>
+          <td>{{ hero.nemesis }}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
